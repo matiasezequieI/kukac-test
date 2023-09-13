@@ -17,7 +17,6 @@ const Change = () => {
   const [moneyHandedOver, setMoneyHandedOver] = useState('')
   const [haveError, setHaveError] = useState(false)
   const [messageError, setMessageError] = useState('')
-  const [isSuccess, setIsSuccess] = useState(false)
   const [result, setResult] = useState<changeResult | null>()
 
   const handleCheck = async () => {
@@ -30,12 +29,10 @@ const Change = () => {
       })
       setHaveError(false)
       setMessageError('')
-      setIsSuccess(true)
       setResult(res.data)
     } catch (error) {
       if (axios.isAxiosError(error)) {
         if (error.response) {
-          setIsSuccess(false)
           setResult(null)
           setHaveError(true)
           setMessageError(error.response?.data.message)
