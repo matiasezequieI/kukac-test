@@ -12,7 +12,15 @@ const data = [
     path: '/change',
     title: 'Change checker',
     description: 'Show the minimum number of notes that the cashier must provide as change'
-  }
+  },
+  {
+    id: 3,
+    image: '/vehicle-image.jpg',
+    path: '/vehicle',
+    title: 'Vehicle control',
+    description: 'For better control of vehicle data'
+  },
+
 ]
 
 export default data
