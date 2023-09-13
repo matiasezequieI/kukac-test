@@ -30,5 +30,5 @@ const palindromesInRange = (start, end) => {
   return result;
 };
 
-const test = palindromesInRange(0, 205);
+const test = palindromesInRange(1, 205);
 console.log(test);
