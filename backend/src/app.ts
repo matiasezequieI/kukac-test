@@ -4,6 +4,7 @@ import morgan from 'morgan'
 import errorHandler from './api/middlewares/errorHandler'
 import notFound from './api/middlewares/notFound'
 import palyndromeRouter from './routes/palyndromeRouter'
+import changeRouter from './routes/changeRouter'
 
 
 const app = express() 
@@ -13,6 +14,7 @@ app.use(cors())
 app.use(morgan('dev'))
 
 app.use('/palyndrome', palyndromeRouter)
+app.use('/change', changeRouter)
 
 
 app.use(notFound)

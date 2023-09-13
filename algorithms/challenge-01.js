@@ -1,4 +1,6 @@
 const palindromesInRange = (start, end) => {
+  if (Number(start) === Number(end)) throw Error('Inputs must have different values')
+
   if (!start && !end) throw Error('Both inputs must be provided');
 
   if (typeof start !== 'number' || typeof end !== 'number')
@@ -15,7 +17,7 @@ const palindromesInRange = (start, end) => {
 
   if (start > end)
     throw Error(
-      'The start of the range must be less than the end of the range'
+      'The first number must be less than the last'
     );
 
   const result = [];
@@ -30,5 +32,5 @@ const palindromesInRange = (start, end) => {
   return result;
 };
 
-const test = palindromesInRange(1, 205);
+const test = palindromesInRange(0, 0);
 console.log(test);

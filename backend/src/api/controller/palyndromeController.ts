@@ -20,7 +20,7 @@ export const isPalyndrome: RequestHandler = async (req, res, next) => {
 			throw new HttpException(400, 'Inputs must be a valid range')
 
 		if (start > end)
-			throw new HttpException(400, 'The start of the range must be less than the end of the range.')
+			throw new HttpException(400, 'The first number must be less than the last')
 
 		const result = []
 

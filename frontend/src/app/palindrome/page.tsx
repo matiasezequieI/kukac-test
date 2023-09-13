@@ -45,7 +45,7 @@ const Palyndrome = () => {
           <h1 className='text-4xl text-center mt-6 font-bold text-slate-600'>
             Palindrome
           </h1>
-          <p className='text-2xl text-center font-bold text-slate-500 mt-8'>
+          <p className='text-2xl text-center font-bold text-slate-500 mt-8 px-2'>
             A palindromic number is a number that remains the same when its digits are reversed.
           </p>
         </div>
@@ -85,10 +85,10 @@ const Palyndrome = () => {
         </div>
         <div>
           <div>
-            {haveError && <p className='font-bold text-red-500 mt-24 px-6'>{messageError}</p>}
+            {haveError && <p className='font-bold text-red-500 pt-14 px-6'>{messageError}</p>}
           </div>
-          <div className='mt-16 px-6'>
-            {isSuccess && <p className='pt-24'>{result}</p>}
+          <div className='px-6'>
+            {isSuccess && <p className='pt-14'>{result}</p>}
           </div>
         </div>
       </div>
