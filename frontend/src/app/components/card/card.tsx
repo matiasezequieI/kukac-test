@@ -1,7 +1,6 @@
-import image from 'next/image';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
 type CardProps = {
   image: string,
@@ -13,14 +12,14 @@ type CardProps = {
 const Card = ({ image, path, title, description }: CardProps) => {
   return (
     <div className='max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
-        <Image
-          className='rounded-t-lg object-fill h-48 w-96'
-          priority
-          src={image}
-          alt='project card'
-          width={150}
-          height={150}
-        /> 
+      <Image
+        className='rounded-t-lg object-fill h-48 w-96'
+        priority
+        src={image}
+        alt='project card'
+        width={150}
+        height={150}
+      />
       <div className='p-5'>
         <a href='#'>
           <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
@@ -38,7 +37,7 @@ const Card = ({ image, path, title, description }: CardProps) => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

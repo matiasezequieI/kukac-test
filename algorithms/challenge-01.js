@@ -2,14 +2,23 @@ const palindromesInRange = (start, end) => {
   if (!start && !end) throw Error('Both inputs must be provided');
 
   if (typeof start !== 'number' || typeof end !== 'number')
-    throw Error('Both inputs must be numbers');
+    throw Error('Inputs must be numbers');
+
+  if (!Number.isInteger(start) || !Number.isInteger(end))
+    throw Error("Inputs must be integers");
+
+  if (start < 0 || end < 0)
+    throw Error('Inputs must be positive numbers')
+
+  if (start === end)
+    throw new HttpException('Inputs must be a valid range')
 
   if (start > end)
     throw Error(
-      'The start of the range must be less than or equal to the end of the range'
+      'The start of the range must be less than the end of the range'
     );
 
-  let result = [];
+  const result = [];
 
   for (let i = start; i <= end; i++) {
     let numToString = String(i);
@@ -21,5 +30,5 @@ const palindromesInRange = (start, end) => {
   return result;
 };
 
-const test = palindromesInRange(0, '205');
+const test = palindromesInRange(0, 205);
 console.log(test);
