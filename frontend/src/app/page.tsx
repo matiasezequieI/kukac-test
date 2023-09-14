@@ -10,7 +10,7 @@ export default function Home () {
           Welcome to my KUKAC challenge project
         </h1>
         <h2 className='text-2xl text-center font-bold text-slate-500'>Here you can check the challenges that were developed</h2>
-        <div className='flex justify-evenly py-10'>
+        <div className='flex justify-evenly py-10 items-baseline'>
           {data.map((item) => (
             <Card
               key={item.id}

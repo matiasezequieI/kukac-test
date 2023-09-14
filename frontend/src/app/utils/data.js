@@ -20,6 +20,13 @@ const data = [
     title: 'Vehicle control',
     description: 'For better control of vehicle data'
   },
+  {
+    id: 4,
+    image: '/world-image.png',
+    path: '/cep',
+    title: 'CEP Info',
+    description: 'Find information about any zip code'
+  },
 
 ]
 

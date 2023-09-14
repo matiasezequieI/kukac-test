@@ -59,7 +59,7 @@ const Vehicle = () => {
             />
           </div>
           <div>
-            <h1 className='text-base text-center text-slate-500 font-bold'>
+            <h1 className='text-2xl text-center font-bold text-slate-500 mt-8 px-2'>
               Register your new vehicle!
             </h1>
           </div>
@@ -196,7 +196,6 @@ const Vehicle = () => {
           </form>
         </div>
       </div>
-
     </div>
   )
 }
