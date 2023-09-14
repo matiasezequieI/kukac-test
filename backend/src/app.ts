@@ -6,6 +6,8 @@ import notFound from './api/middlewares/notFound'
 import palyndromeRouter from './routes/palyndromeRouter'
 import changeRouter from './routes/changeRouter'
 import vehicleRouter from './routes/vehicleRouter'
+import cepRouter from './routes/cepRouter'
+
 
 
 const app = express() 
@@ -17,6 +19,8 @@ app.use(morgan('dev'))
 app.use('/palyndrome', palyndromeRouter)
 app.use('/change', changeRouter)
 app.use('/vehicle', vehicleRouter)
+app.use('/cep', cepRouter)
+
 
 app.use(notFound)
 app.use(errorHandler)

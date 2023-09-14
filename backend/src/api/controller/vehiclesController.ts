@@ -7,7 +7,7 @@ import { appendFile } from 'fs'
 const vehicles: Carro[] & Moto[] = []
 
 
-export const createVehicle: RequestHandler = async (req, res,next) => {
+export const createVehicle: RequestHandler = async (req, res, next) => {
 	const { type, model, year, doors, brand, passengers } = req.body
 
 	try {
